@@ -295,11 +295,6 @@ const projects = [
       { name: "Java MapReduce", color: "red-text-gradient" }
 
     ],
-    source_code_link: "https://github.com/Ibrahim-krimi/ProjetTPA-Map-Reduce",
-    additional_links: [
-      "https://github.com/Ibrahim-krimi/ProjetTPA-machine-learning",
-      "https://github.com/MarwaneLarbi/3djs"
-    ],
     image: tripguide,
     Links: {
      "MapReduce Java": "https://github.com/Ibrahim-krimi/ProjetTPA-Map-Reduce",
@@ -330,7 +325,6 @@ const projects = [
     name: "Bataille Naval Java",
     description: "I developed the 'Bataille Naval' game using Java and Java Swing, creating a visually interactive naval combat simulator where players deploy ships and strategize to defeat their opponents. The game features user-friendly interfaces and dynamic animations to enhance player engagement and provide a realistic battle experience.",
     tags: [{ name: "java", color: "blue-text-gradient" }],
-    source_code_link: "https://github.com/Ibrahim-krimi/bataille-naval",
     image: tripguide,
     Links: {
       "Git Repository": "https://github.com/Ibrahim-krimi/bataille-naval",
@@ -345,9 +339,11 @@ const projects = [
       { name: "node.js", color: "green-text-gradient" },
       { name: "mongodb", color: "yellow-text-gradient" }
     ],
-    source_code_link: "https://github.com/Ibrahim-krimi/ProjectAngularFront",
-    additional_link: "https://github.com/Ibrahim-krimi/ProjectAngularBack",
-    image: tripguide
+    image: tripguide,
+    Links: {
+     "FrontEnd": "https://github.com/Ibrahim-krimi/ProjectAngularFront",
+      "BackEnd": "https://github.com/Ibrahim-krimi/ProjectAngularBack",
+    },
   }
   ,
   {
@@ -360,8 +356,10 @@ const projects = [
       { name: "Docker", color: "yellow-text-gradient" }
 
     ],
-    source_code_link: "https://github.com/yassine-berriri/M2MBDS_2023_2024_React_NodeJS_KBBL",
-    image: tripguide
+    image: tripguide,
+    Links: {
+     "Git Repository": "https://github.com/yassine-berriri/M2MBDS_2023_2024_React_NodeJS_KBBL",
+    },
   },
   {
     name: "MyPortfolio",
@@ -371,7 +369,10 @@ const projects = [
       { name: "three.js", color: "gray-text-gradient" }
     ],
     source_code_link: "https://github.com/Ibrahim-krimi/portfolio",
-    image: tripguide
+    image: tripguide,
+    Links: {
+     "Git Repository": "https://github.com/Ibrahim-krimi/portfolio",
+    },
   },
   {
     name: "IOT Project",
@@ -382,21 +383,31 @@ const projects = [
       "https://github.com/Ibrahim-krimi/IOTProjectMiage",
       "https://github.com/Ibrahim-krimi/iotProjet_dashboardAdmin"
     ],
-    image: tripguide
+    image: tripguide,
+    Links: {
+     "Service Node": "https://github.com/Ibrahim-krimi/IOT",
+      "Arduino C++": "https://github.com/Ibrahim-krimi/IOTProjectMiage",
+      "Dashboard JS": "https://github.com/Ibrahim-krimi/iotProjet_dashboardAdmin",
+    },
   },
   {
     name: "Projet Android Kotlin",
     description: "We (me and my team) developed 'AnneFlix,' an innovative Android application for movie and series enthusiasts, inspired by Netflix and powered by TheMovieDB API. AnneFlix offers an immersive and interactive streaming experience, allowing users to explore a vast library of multimedia content. Created using Kotlin, this app integrates advanced features to enhance user engagement and content accessibility.",
     tags: [{ name: "android", color: "green-text-gradient" }, { name: "kotlin", color: "blue-text-gradient" }],
     source_code_link: "https://github.com/MBDS-2023-2024/mini-projet-ibrahim-yassine-badis-marwan",
-    image: tripguide
+    image: tripguide,
+    Links: {
+     "Git Repository": "https://github.com/MBDS-2023-2024/mini-projet-ibrahim-yassine-badis-marwan",
+    },
   },
   {
     name: "Flutter Project",
     description: "We (me and my team) developed 'Lalabi Collaborative Commuting,' a cutting-edge Flutter application designed to transform daily commuting by facilitating ride-sharing and hitchhiking in a user-friendly and secure platform. Integrating Node.js, real-time communication via Socket.IO, and Google Maps for route tracking, Lalabi connects drivers with available seats to passengers seeking transport, effectively reducing carbon emissions and easing traffic congestion. Additionally, it features WebRTC for video communication among users .",
     tags: [{ name: "flutter", color: "cyan-text-gradient" }],
-    source_code_link: "https://github.com/Ibrahim-krimi/tpi-collaborative-commuting-mybi",
-    image: tripguide
+    image: tripguide,
+    Links: {
+     "Git Repository": "https://github.com/Ibrahim-krimi/tpi-collaborative-commuting-mybi",
+    },
   },
 ];
 

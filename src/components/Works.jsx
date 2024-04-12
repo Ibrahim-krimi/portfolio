@@ -14,8 +14,7 @@ const ProjectCard = ({
   name,
   description,
   tags,
-  image,
-  source_code_link,
+  Links
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -48,7 +47,18 @@ const ProjectCard = ({
             className='w-1/6 h-1/2 object-contain'
         />
          </div>
-         
+
+
+         <div className='mt-4'>
+        {Object.keys(Links).map((key) => (
+          <div key={key}>
+            <a href={Links[key]} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 block">{key}</a>
+          </div>
+        ))}
+      </div>
+
+
+
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
