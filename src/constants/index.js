@@ -233,27 +233,26 @@ const StudyParcours = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+    testimonial:"The internship went incredibly well, exceeding our expectations, prompting us to seriously consider bringing Ibrahim on board as an apprentice.",
+    name: "Mohamed-Saïd JARMOUD",
+    designation: "Founder Of ",
+    company: "INTELLIGENT CONCEPTS",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Very satisfactory progress has been made on the developments. The apprentice has remained consistently engaged, effective, and independent.",
+    name: "Frederic Hantz",
+    designation: "Project Manager",
+    company: "at Acoss",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "I valued working with Ibrahim on numerous computer science projects; his creativity, intelligence, and drive significantly improved our debugging and problem-solving efforts.",
+    name: "Mehdi Khenessi",
+    designation: "cybersecurity engineer",
+    company: "at FAIRLY MADE",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];

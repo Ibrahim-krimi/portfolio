@@ -72,7 +72,7 @@ const ProjectCard = ({
         </div>
       </Tilt>
     </motion.div>
-  );
+  );  
 };
 
 const Works = () => {
