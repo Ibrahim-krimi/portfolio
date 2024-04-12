@@ -72,55 +72,30 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className='text-secondary font-black text-[20px]'>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        
+        
+      <div className="mt-12 flex flex-col gap-8">
+          <p className="mb-2 text-16 text-customPurple">
+            Email: <a href="mailto:your-email@example.com" className="text-secondary no-underline">ibrahimkrimi2@gmail.com</a>
+          </p>
+          <p className="mb-2 text-16 text-customPurple">
+            Phone: <a href="tel:+1234567890" className="text-secondary no-underline">+33751535144</a>
+          </p>
+          <p className="mb-2 text-16 text-customPurple">
+            LinkedIn: <a href="https://www.linkedin.com/in/krimi/" target="_blank" className="text-secondary no-underline">Ibrahim Krimi</a>
+          </p>
+          <p className="mb-2 text-16 text-customPurple">
+            Location: Valbonne, France
+          </p>
+          <p className="mb-2 text-16 text-customPurple">
+            Open to relocation.
+          </p>
+      </div>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
 
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+    
       </motion.div>
 
       <motion.div

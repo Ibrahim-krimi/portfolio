@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="308.7612359841165"
+   height="304.915625"
+   viewBox="0 0 106.00782394174519 104.68749999999999"
+   class="css-1j8o68f"
+   version="1.1"
+   id="svg23"
+   xmlns="http://www.w3.org/2000/svg">
+  <!-- Groupe pour les lettres 'IK' en chiffre romain et la lettre K -->
+  <g fill="#ff4a3f">
+    <!-- Rectangle vertical pour représenter le 'I' -->
+    <rect x="25" y="10" width="15" height="84.6875" fill="#ff4a3f"/>
+    <!-- Ajout de la lettre 'K' -->
+    <path d="M52,10 l15,42 -15,42 h20 l20,-40 -20,-40 h-20 z" fill="#ff4a3f"/>
+  </g>
+</svg>
