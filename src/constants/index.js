@@ -258,70 +258,147 @@ const testimonials = [
   },
 ];
 
+
+
+
+
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "MicroService  Project",
+    description: "In collaboration with my team, we developed the Yams game using a microservices architecture, where each microservice is specifically designed to handle a distinct function and communicate seamlessly with others. We containerized each service using Docker to enhance scalability and ensure robust, isolated environments. This approach allowed for efficient deployment and simplified maintenance, showcasing our capability to integrate complex technologies effectively.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "spring", color: "green-text-gradient" },
+      { name: "docker", color: "gray-text-gradient" }
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Master1-MIAGE-UCA/oil-2022-23-td2-shadow-team",
+    image: tripguide,
+    Links: {
+      "Git Repository": "https://github.com/Master1-MIAGE-UCA/oil-2022-23-td2-shadow-team",
+    },
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
+    name: "MicroService  Project 2",
+    description: "This project is organized into distinct branches for each major feature, enhancing clarity and management. Key achievements include the development of two essential services—Posts and Skills—both interconnected using Open Feign for robust communication. A gateway for service discovery and an API gateway are implemented to streamline microservice interactions. Additionally, resilience is bolstered by integrating a Circuit Breaker and centralizing configuration management",
+    tags: [{ name: "spring", color: "green-text-gradient" }],
+    image: tripguide,
+    Links: {
+      "Git Repository": "https://github.com/MBDS-23-24/projet-evaluation-spring-Ibrahim-krimi",
+    },
+  }
+  ,
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "Projet Big Data / Machine Learning",
+    description: "In this project, we aggregated data from various databases including NoSQL, SQL, MongoDB, Graph, and Cassandra. We applied Java-based MapReduce jobs to process the data efficiently. Following this, we constructed a predictive model to analyze the data insights. Finally, the project culminated in the development of a data visualization module to effectively present the outcomes and patterns derived from our analysis.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "big data", color: "purple-text-gradient" },
+      { name: "machine learning", color: "red-text-gradient" },
+      { name: "Java MapReduce", color: "red-text-gradient" }
+
+    ],
+    source_code_link: "https://github.com/Ibrahim-krimi/ProjetTPA-Map-Reduce",
+    additional_links: [
+      "https://github.com/Ibrahim-krimi/ProjetTPA-machine-learning",
+      "https://github.com/MarwaneLarbi/3djs"
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    Links: {
+     "MapReduce Java": "https://github.com/Ibrahim-krimi/ProjetTPA-Map-Reduce",
+      "Machine Learning": "https://github.com/Ibrahim-krimi/ProjetTPA-machine-learning",
+      "3djs": "https://github.com/MarwaneLarbi/3djs",
+    },
+  },
+  {
+    name: "Project Java IA",
+    description: "In this project, I utilized AI algorithms such as Backtracking, A* (A star), to efficiently plan and sequence house construction tasks. These algorithms ensured adherence to building rules and optimized spatial and temporal arrangements in our simulations.",
+    tags: [{ name: "java", color: "blue-text-gradient" }],
+    source_code_link: "https://github.com/Ibrahim-krimi/ProjectL3IA",
+    image: tripguide,
+    Links: {
+      "Git Repository": "https://github.com/Ibrahim-krimi/ProjectL3IA",
+     }
+  },
+  {
+    name: "Ricoche Robot Java",
+    description: "I developed the 'Ricochet Robot' project in Java, designing an engaging and interactive game where players strategically navigate robots through a complex board to reach target spots. Additionally, I implemented intelligent bots using AI algorithms, which I developed to enhance the game's challenge and interactivity.",
+    tags: [{ name: "java", color: "blue-text-gradient" }],
+    image: tripguide,
+    Links: {
+      "Git Repository": "https://github.com/Ibrahim-krimi/Ricoche-Robot",
+     }
+  },
+  {
+    name: "Bataille Naval Java",
+    description: "I developed the 'Bataille Naval' game using Java and Java Swing, creating a visually interactive naval combat simulator where players deploy ships and strategize to defeat their opponents. The game features user-friendly interfaces and dynamic animations to enhance player engagement and provide a realistic battle experience.",
+    tags: [{ name: "java", color: "blue-text-gradient" }],
+    source_code_link: "https://github.com/Ibrahim-krimi/bataille-naval",
+    image: tripguide,
+    Links: {
+      "Git Repository": "https://github.com/Ibrahim-krimi/bataille-naval",
+     }
+    
+  },
+  {
+    name: "Project Angular / Node js / Mongo",
+    description: "I developed the 'AssignmentApp,' a comprehensive online exam management platform using Node.js, Angular, and MongoDB. This application allows instructors to upload exams, correct submissions, and assign grades, while also providing separate administrative and user interfaces to accommodate different user roles effectively. MongoDB is utilized to securely store and manage all user data and exam content.",
+    tags: [
+      { name: "angular", color: "red-text-gradient" },
+      { name: "node.js", color: "green-text-gradient" },
+      { name: "mongodb", color: "yellow-text-gradient" }
+    ],
+    source_code_link: "https://github.com/Ibrahim-krimi/ProjectAngularFront",
+    additional_link: "https://github.com/Ibrahim-krimi/ProjectAngularBack",
+    image: tripguide
+  }
+  ,
+  {
+    name: "Project React / Node / Mongo",
+    description: "We (me and my team) developed 'PixelBoard,' an interactive platform where users can color a single pixel at regular intervals from a limited color palette. Built with React, Node.js, MongoDB, and Docker, the application ensures real-time interaction through Socket.IO. Each artwork on PixelBoard has a defined lifespan, after which it is considered complete and no further changes are allowed, preserving the integrity of the finished pieces.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "node.js", color: "green-text-gradient" },
+      { name: "mongodb", color: "yellow-text-gradient" },
+      { name: "Docker", color: "yellow-text-gradient" }
+
+    ],
+    source_code_link: "https://github.com/yassine-berriri/M2MBDS_2023_2024_React_NodeJS_KBBL",
+    image: tripguide
+  },
+  {
+    name: "MyPortfolio",
+    description: "My personal portfolio not only showcases my projects and skills but also integrates Three.js to display dynamic 3D elements like a computer model and a rotating Earth. Developed using React and Three.js, this portfolio effectively demonstrates my technical abilities and the creative application of web technologies to enhance user experience and engagement .",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "three.js", color: "gray-text-gradient" }
+    ],
+    source_code_link: "https://github.com/Ibrahim-krimi/portfolio",
+    image: tripguide
+  },
+  {
+    name: "IOT Project",
+    description: "I developed an IoT-based Pool Surveillance Project during a course in the MIAGE program. This project leverages MQTT and HTTP protocols, Node-RED for data flow management, and integrates with various web services to facilitate communication between an ESP32 device and a MongoDB database. The primary goal is to showcase the use of IoT technologies in real-world applications, including a dedicated admin service and deployment solutions.",
+    tags: [{ name: "iot", color: "orange-text-gradient" }],
+    source_code_link: "https://github.com/Ibrahim-krimi/IOT",
+    additional_links: [
+      "https://github.com/Ibrahim-krimi/IOTProjectMiage",
+      "https://github.com/Ibrahim-krimi/iotProjet_dashboardAdmin"
+    ],
+    image: tripguide
+  },
+  {
+    name: "Projet Android Kotlin",
+    description: "We (me and my team) developed 'AnneFlix,' an innovative Android application for movie and series enthusiasts, inspired by Netflix and powered by TheMovieDB API. AnneFlix offers an immersive and interactive streaming experience, allowing users to explore a vast library of multimedia content. Created using Kotlin, this app integrates advanced features to enhance user engagement and content accessibility.",
+    tags: [{ name: "android", color: "green-text-gradient" }, { name: "kotlin", color: "blue-text-gradient" }],
+    source_code_link: "https://github.com/MBDS-2023-2024/mini-projet-ibrahim-yassine-badis-marwan",
+    image: tripguide
+  },
+  {
+    name: "Flutter Project",
+    description: "We (me and my team) developed 'Lalabi Collaborative Commuting,' a cutting-edge Flutter application designed to transform daily commuting by facilitating ride-sharing and hitchhiking in a user-friendly and secure platform. Integrating Node.js, real-time communication via Socket.IO, and Google Maps for route tracking, Lalabi connects drivers with available seats to passengers seeking transport, effectively reducing carbon emissions and easing traffic congestion. Additionally, it features WebRTC for video communication among users .",
+    tags: [{ name: "flutter", color: "cyan-text-gradient" }],
+    source_code_link: "https://github.com/Ibrahim-krimi/tpi-collaborative-commuting-mybi",
+    image: tripguide
   },
 ];
+
 
 export { services, technologies, experiences, testimonials, projects ,StudyParcours};
