@@ -13,11 +13,18 @@ const CanvasLoader = () => {
         flexDirection: "column",
       }}
     >
-      <span className='canvas-loader'></span>
+      <span className='canvas-loader' style={{
+        width: '50px',
+        height: '50px',
+        borderRadius: '50%',
+        border: '5px solid #000', // Noir pour la partie visible du loader
+        borderTopColor: 'transparent', // Partie transparente pour l'animation
+        animation: 'spin 1s linear infinite'
+      }}></span>
       <p
         style={{
           fontSize: 14,
-          color: "#F1F1F1",
+          color: "#484848", // Vous pouvez également changer cette couleur si nécessaire
           fontWeight: 800,
           marginTop: 40,
         }}
@@ -29,3 +36,11 @@ const CanvasLoader = () => {
 };
 
 export default CanvasLoader;
+
+// Ajout de l'animation CSS pour le spinner
+document.head.appendChild(document.createElement('style')).textContent = `
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+`;
