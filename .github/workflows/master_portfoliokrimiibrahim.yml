@@ -47,10 +47,7 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F7519A6E03444DB6AF385261A8EAD104 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_74ABA4A35CEC4E68ABD6DC21F90B61B8 }}
 
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'portfolioKrimiIbrahim'
-          slot-name: 'Production'
-          # Specify the folder to deploy if your build process outputs to a specific folder like 'dist' or 'build'
-          package: './dist'  # Update this line if your output directory is different
+      - name: List build output before deployment
+        run: ls -la
+        
+ 
