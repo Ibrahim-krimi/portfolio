@@ -13,6 +13,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      random-number: ${{ steps.random-number.outputs.number }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -31,7 +34,13 @@ jobs:
           echo "Listing contents of the current directory:"
           ls -la
           echo "Listing contents of the build output directory (dist/):"
-          ls -la dist/  # Ensure this directory is your actual output directory
+          ls -la dist/
+
+      - name: Upload dist directory
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/
 
   deploy:
     runs-on: ubuntu-latest
@@ -43,6 +52,12 @@ jobs:
       id-token: write # Required for requesting the JWT
 
     steps:
+      - name: Download dist directory
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist
+
       - name: Login to Azure
         uses: azure/login@v1
         with:
