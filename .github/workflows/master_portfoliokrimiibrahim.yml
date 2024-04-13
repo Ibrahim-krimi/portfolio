@@ -13,7 +13,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -29,6 +28,10 @@ jobs:
           npm install
           npm run build 
           npm run test --if-present
+          echo "Listing contents of the current directory:"
+          ls -la
+          echo "Listing contents of the build output directory (dist/):"
+          ls -la dist/  # Ensure this directory is your actual output directory
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,5 +55,4 @@ jobs:
         with:
           app-name: 'portfolioKrimiIbrahim'
           slot-name: 'Production'
-          # Specify the folder to deploy if your build process outputs to a specific folder like 'dist' or 'build'
-          package: './build'  # Update this line if your output directory is different
+          package: './dist'  # Ensure this path matches the actual build output directory
