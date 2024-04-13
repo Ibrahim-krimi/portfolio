@@ -48,6 +48,11 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+
+// cv 
+
+import cv from "./CV/cv.pdf";
+
 export {
   logo,
   backend,
@@ -88,4 +93,5 @@ export {
   caen,
   coteazur,
   isima,
+  cv
 };

@@ -44,3 +44,4 @@ document.head.appendChild(document.createElement('style')).textContent = `
   100% { transform: rotate(360deg); }
 }
 `;
+

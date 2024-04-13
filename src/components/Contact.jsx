@@ -7,6 +7,8 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import DownloadCVButton from './DownloadCVButton';
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -92,6 +94,7 @@ const Contact = () => {
           <p className="mb-2 text-16 text-customPurple">
             Open to relocation.
           </p>
+          <DownloadCVButton></DownloadCVButton>
       </div>
 
 
