@@ -14,7 +14,7 @@ module.exports = {
         customGray: '#494949',
         customPurple: '#915EFF',
         backcolor: "#faf6e9",
-        navbarColor: "#fffdf6",
+        navbarColor: "#fffdf6",   
         
         
       },
